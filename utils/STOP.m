@@ -27,6 +27,7 @@ classdef STOP
     % mode--->the mode of problem call, problem generation (gen) or s-esto optimization (opt)
     % target_problem--->the instantiated target task
     % knowledge_base--->the knowledge base containing the evaluated solutions of k source tasks
+    % folder_save--->the folder used for storing the generated STOPs
     % problem_families---<read-only>the list of candidate task families
     % optimizer---<read-only>the optimizer used for solving the source and target tasks
     % popsize---<read-only>the population size, N>0
@@ -44,6 +45,7 @@ classdef STOP
         mode = 'opt';
         target_problem;
         knowledge_base = struct;
+        folder_save = 'problems';
     end
 
     properties(SetAccess = protected)
@@ -59,15 +61,15 @@ classdef STOP
 
         function obj = STOP(varargin) % initialization
             isStr = find(cellfun(@ischar,varargin(1:end-1))&~cellfun(@isempty,varargin(2:end)));
-            for i = isStr(ismember(varargin(isStr),{'func_target','trans_sce','xi','sim_distribution','dim','mode'}))
+            for i = isStr(ismember(varargin(isStr),{'func_target','trans_sce','xi','sim_distribution','dim','mode','folder_save'}))
                 obj.(varargin{i}) = varargin{i+1};
             end
             % examine the availability of the specified STO problem
-            dir_sesto = ['.\benchmarks\',obj.func_target,'-T',obj.trans_sce,'-xi',num2str(obj.xi),'-S',...
+            dir_sesto = [obj.folder_save,'\',obj.func_target,'-T',obj.trans_sce,'-xi',num2str(obj.xi),'-S',...
                 obj.sim_distribution,'-d',num2str(obj.dim),'-k',num2str(obj.k),'.mat'];
             obj.state_knowledgebase = sign(exist(dir_sesto,'file'));
             if obj.state_knowledgebase == 1 && strcmp(obj.mode,'opt') % will not load the data in the generation mode
-                load(['.\benchmarks\',obj.func_target,'-T',obj.trans_sce,'-xi',num2str(obj.xi),'-S',...
+                load([obj.folder_save,'\',obj.func_target,'-T',obj.trans_sce,'-xi',num2str(obj.xi),'-S',...
                 obj.sim_distribution,'-d',num2str(obj.dim),'-k',num2str(obj.k),'.mat']);
                 obj.target_problem = target;
                 obj.source_problems = sources;
@@ -117,7 +119,7 @@ classdef STOP
                 knowledge(i).fitnesses = obj.knowledge_base(i).fitnesses;
             end
             obj.source_problems = sources;
-            save(['.\benchmarks\',obj.func_target,'-T',obj.trans_sce,'-xi',num2str(obj.xi),'-S',...
+            save([obj.folder_save,'\',obj.func_target,'-T',obj.trans_sce,'-xi',num2str(obj.xi),'-S',...
                 obj.sim_distribution,'-d',num2str(obj.dim),'-k',num2str(obj.k),'.mat'],...
                 'target','sources','knowledge');
         end
