@@ -9,4 +9,4 @@ This repository provides the MATLAB implementations of producing the benchmark s
 * problem dimension (d): 5 to 50
 * the number of source tasks (k): a positive integer
 
-In the article, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, S represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks.
+In the article, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, S represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 individual STOPs to form the benchmark suite,
