@@ -11,8 +11,9 @@ This repository provides the MATLAB implementations of producing the benchmark s
 
 In the article, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, S represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 individual STOPs to form the benchmark suite,
 
+
 |Problem ID|Problem Specification|
-|:-|:-|:-|
+|:-|:-|
 |STOP 1|Sphere-Ta-0-Sc-50-1000|
 |STOP 2|Ellipsoid-Te-0-Su-25-1000|
 |STOP 3|Schwefel-Ta-0-Si-30-1000|
@@ -25,3 +26,4 @@ In the article, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the ta
 |STOP 10|Sphere-Te-1-Su-50-1000|
 |STOP 11|Ackley-Ta-1-Si-25-1000|
 |STOP 12|Ellipsoid-Te-1-Sd-30-1000|
+
