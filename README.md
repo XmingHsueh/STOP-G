@@ -6,7 +6,7 @@ This repository provides the MATLAB implementations of producing the benchmark s
 
 * target task (F): `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`.
 * transfer scenario (T): `Ta` and `Te`.
-* the parameter of controlling optimum coverage (xi): a real number from 0 to 1.
+* the parameter that determines optimum coverage (xi): a real number from 0 to 1.
 * similarity distribution (S): `Sc`, `Su`, `Si` and `Sd`.
 * problem dimension (d): a positive integer.
 * the number of source tasks (k): a positive integer.
