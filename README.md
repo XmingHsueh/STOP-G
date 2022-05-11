@@ -4,12 +4,12 @@
 
 This repository provides the MATLAB implementations of producing the benchmark suite developed in the above article, which contains 12 individual sequential transfer optimization problems (STOPs). To instantiate an STOP, we need to configure the following six aspects: target task, transfer scenario, the parameter that determines optimum coverage, similarity distribution, problem dimension, and the number of source tasks. Their available configurations are as follows:
 
-* target task (F): `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`
-* transfer scenario (T): `Ta` and `Te`
-* the parameter of controlling optimum coverage (xi): a real number from 0 to 1
-* similarity distribution (S): `Sc`, `Su`, `Si` and `Sd`
-* problem dimension (d): a positive integer
-* the number of source tasks (k): a positive integer
+* target task (F): `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`.
+* transfer scenario (T): `Ta` and `Te`.
+* the parameter of controlling optimum coverage (xi): a real number from 0 to 1.
+* similarity distribution (S): `Sc`, `Su`, `Si` and `Sd`.
+* problem dimension (d): a positive integer.
+* the number of source tasks (k): a positive integer.
 
 For more detailed explainations about the above six aspects, interested readers can refer to part A of the series. In this work, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, S represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 individual STOPs to form the benchmark suite,
 
