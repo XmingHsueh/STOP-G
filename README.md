@@ -9,7 +9,7 @@ This repository provides the MATLAB implementations of producing the benchmark s
 * problem dimension (d): a positive integer
 * the number of source tasks (k): a positive integer
 
-In the article, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, S represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 individual STOPs to form the benchmark suite,
+For more detailed explainations about the above six aspects, interested readers can refer to part A of the series. In this work, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, S represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 individual STOPs to form the benchmark suite,
 
 
 |Problem ID|Problem Specification|
@@ -27,4 +27,25 @@ In the article, we name a black-box STOP as F-T-xi-S-d-k, where F denotes the ta
 |STOP 11|Ackley-Ta-1-Si-25-1000|
 |STOP 12|Ellipsoid-Te-1-Sd-30-1000|
 
-The above 12 STOPs can be easily instantiated using the class [STOP](https://github.com/XmingHsueh/Revisiting-S-ESTOs-PartA/blob/main/utils/STOP.m). The script of generating the 12 problems is [main_benchmarking_stop](https://github.com/XmingHsueh/Revisiting-S-ESTOs-PartA/blob/main/main_benchmarking_stop.m).
+The above 12 STOPs can be easily instantiated using the class [STOP](https://github.com/XmingHsueh/Revisiting-S-ESTOs-PartA/blob/main/utils/STOP.m). The script of generating the 12 STOPs is [main_benchmarking_stop](https://github.com/XmingHsueh/Revisiting-S-ESTOs-PartA/blob/main/main_benchmarking_stop.m).
+
+
+## Citation
+
+If you find this repo useful for your research, please consider to cite:
+```latex
+@article{Xue2022,
+title = {How to Exploit Experience? Revisiting Evolutionary Sequential Transfer Optimization: Part A},
+author = {Xue, Xiaoming and Hu, Yao and Yang, Cuie and Feng, Liang and Chen, Guodong and Zhang, Kai and Song, Linqi and Tan, Kay Chen}
+journal = {...},
+volume = {1},
+pages = {1 - 14},
+year = {2022},
+doi = {https://...},
+url = {http://...},
+}
+```
+
+## Acknowledgments
+
+...
