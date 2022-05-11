@@ -48,23 +48,23 @@ fitnesses{gen} = fitness;
 while FEsCount < FEsMax
     
     % offspring generation using the specified operator
-    population_old = population;
-    fitness_old = fitness;
-    [~,idx] = sort(fitness);
-    offspring_generation_command = ['population = ',optimizer,...
-        '_generator(population(idx,:),lb,ub);'];
+    population_parent = population;
+    fitness_parent = fitness;
+    offspring_generation_command = ['population_child = ',optimizer,...
+        '_generator(population_parent,lb,ub);'];
     eval(offspring_generation_command);
     
     % offspring evaluation
+    fitness_child = zeros(popsize,1);
     for i=1:popsize
-        fitness(i) = fun(population(i,:));
+        fitness_child(i) = fun(population_child(i,:));
     end
     FEsCount = FEsCount+popsize;
     gen = gen+1;
     
     % selection phase
     selection_command = ['[population,fitness]=',optimizer,...
-        '_selector(population_old,fitness_old,population,fitness);'];
+        '_selector(population_parent,fitness_parent,population_child,fitness_child);'];
     eval(selection_command)
     
     % update the records

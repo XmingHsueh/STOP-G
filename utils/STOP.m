@@ -49,10 +49,11 @@ classdef STOP
     end
 
     properties(SetAccess = protected)
-        problem_families = {'Sphere','Ellipsoid','Schwefel','Quartic','Ackley','Rastrigin','Griewank','Levy'};
+        problem_families = {'Sphere','Ellipsoid','Schwefel','Quartic','Ackley','Rastrigin',...
+            'Griewank','Levy'};
         optimizer = 'ea';
-        popsize = 20;
-        FEsMax = 1000;
+        popsize = 50;
+        FEsMax = 2500;
         state_knowledgebase;
         source_problems;
     end
