@@ -20,9 +20,9 @@ xis = [0 0.7 1]; % the parameter xi that determines optimum coverage
 similarity_distributions = {'c','u','i','d'}; % four representative similarity distributions
 k = 1000; % the number of previously-solved source tasks
 no_problems = 12; % the number of individual benchmark problems
-folder_stops = '.\benchmarks';
-if ~isfolder(folder_stops)
-    mkdir(folder_stops);
+folder_problems = '.\benchmarks';
+if ~isfolder(folder_problems)
+    mkdir(folder_problems);
 end
 
 specifications = [1 1 1 1 50 k; % STOP 1
@@ -43,9 +43,9 @@ for n = 1:no_problems
     STOP('func_target',task_families{specifications(n,1)},'trans_sce',...
         transfer_scenarios{specifications(n,2)},'xi',xis(specifications(n,3)),'sim_distribution',...
         similarity_distributions{specifications(n,4)},'dim',specifications(n,5),'k',...
-        specifications(n,6),'mode','gen','folder_save',folder_stops);
+        specifications(n,6),'mode','gen','folder_stops',folder_problems);
     count = count+1;
     fprintf('#%d of the 12 problems is ready!\n',count);
 end
 
-addpath(folder_stops);
+addpath(folder_problems);
