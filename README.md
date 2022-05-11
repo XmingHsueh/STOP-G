@@ -4,9 +4,9 @@ This repository provides the MATLAB implementations of producing the benchmark s
 
 * target task: `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`
 * transfer scenario: `intra-family transfer` and `inter-family transfer`
-* generation scheme: `constrained generation` and `unconstrained generation`
-* the parameter of controlling optimum coverage: `0`, `0.1`, `0.3`, `0.7`, and `1`
-* problem dimension: `5`, `10`, and `20`
-* the number of source tasks: `1000`
+* the parameter of controlling optimum coverage: `0`, `0.7`, and `1`
+* similarity distribution: `c`, `u`, `i` and `d`
+* problem dimension: 5 to 50
+* the number of source tasks: a positive integer
 
 The naming rule for STOPs 
