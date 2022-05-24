@@ -24,8 +24,8 @@ For more detailed explainations about the above six aspects, interested readers 
 |STOP 6|Rastrigin-Te-0.7-Su-30-1000|
 |STOP 7|Griewank-Ta-0.7-Si-25-1000|
 |STOP 8|Levy-Te-0.7-Sd-30-1000|
-|STOP 9|Rastrigin-Ta-1-Sc-50-1000|
-|STOP 10|Sphere-Te-1-Su-50-1000|
+|STOP 9|Sphere-Ta-1-Sc-25-1000|
+|STOP 10|Rastrigin-Te-1-Su-50-1000|
 |STOP 11|Ackley-Ta-1-Si-25-1000|
 |STOP 12|Ellipsoid-Te-1-Sd-30-1000|
 
