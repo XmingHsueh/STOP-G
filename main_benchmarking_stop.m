@@ -33,8 +33,8 @@ specifications = [1 1 1 1 50 k; % STOP 1
     6 2 2 2	30 k; % STOP 6
     7 1 2 3	25 k; % STOP 7
     8 2 2 4	30 k; % STOP 8
-    6 1 3 1	50 k; % STOP 9
-    1 2 3 2	50 k; % STOP 10
+    1 1 3 1	25 k; % STOP 9
+    6 2 3 2	50 k; % STOP 10
     5 1 3 3	25 k; % STOP 11
     2 2 3 4	30 k]; % STOP 12
 count = 0; % the number of available STOPs
