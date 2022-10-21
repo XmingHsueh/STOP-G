@@ -12,7 +12,7 @@
 % problem--->the problem to be optimized
 % popsize--->the population size
 % FEsMax--->% the number of function evaluations available
-% optimizer--->the name of optimizer
+% optimizer--->the name of population-based optimizer
 %
 % ------------
 % Outputs:
@@ -23,8 +23,8 @@
 % ------------
 % Reference:
 % ------------
-% X. Xue, Y. Hu, C. Yang, et al. â€œHow to Exploit Experience? Revisiting Evolutionary
-% Sequential Transfer Optimization: Part A", Submitted for Peer Review.
+% X. Xue, C. Yang, L. Feng, et al. ¡°How to Exploit Optimization Experience? Revisiting Evolutionary 
+% Sequential Transfer Optimization: Part A - Benchmark Problems", Submitted for Peer Review.
 
 function [solutions,fitnesses] = evolutionary_search(problem,popsize,FEsMax,optimizer)
 
@@ -42,7 +42,7 @@ end
 FEsCount = popsize;
 gen = 1; % the generation count
 solutions{gen} = (population-repmat(lb,popsize,1))./(repmat(ub,popsize,1)-...
-    repmat(lb,popsize,1)); % convert the solutions into the unified search space
+    repmat(lb,popsize,1)); % convert the solutions into the common search space
 fitnesses{gen} = fitness;
 
 while FEsCount < FEsMax

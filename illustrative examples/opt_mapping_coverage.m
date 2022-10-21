@@ -4,14 +4,14 @@
 % ------------
 % Description:
 % ------------
-% This file is the script of generating the optimization mapping of an
-% interval coverage problem in the following paper.
+% This file is the script of generating the optimization mapping of a task
+% family of interval coverage tasks in the following paper.
 %
 % ------------
 % Reference:
 % ------------
-% X. Xue, Y. Hu, C. Yang, et al. ¡°How to Exploit Experience? Revisiting Evolutionary
-% Sequential Transfer Optimization: Part A", Submitted for Peer Review.
+% X. Xue, C. Yang, L. Feng, et al. ¡°How to Exploit Optimization Experience? Revisiting Evolutionary 
+% Sequential Transfer Optimization: Part A - Benchmark Problems", Submitted for Peer Review.
 
 clc,clear
 num_nodes = 21; % the number of sampling points along each feature dimension

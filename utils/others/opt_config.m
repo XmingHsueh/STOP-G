@@ -9,7 +9,7 @@
 % ------------
 % Inputs:
 % ------------
-% xi--->the parameter that determines optimum coverage
+% xi--->the parameter that controls the optimum coverage of a box-constrained image
 % num_tasks--->the number of source tasks
 % d--->the problem dimension
 % sim_distribution--->the similarity distribution
@@ -19,14 +19,14 @@
 % ------------
 % target_opt--->the optimum of the target task
 % source_opt--->the optima of the source tasks
-% lb_image--->the lower bound of the image in decison space
-% ub_image--->the upper bound of the image in decison space
+% lb_image--->the lower bound of the image in the decison space
+% ub_image--->the upper bound of the image in the decison space
 %
 % ------------
 % Reference:
 % ------------
-% X. Xue, Y. Hu, C. Yang, et al. â€œHow to Exploit Experience? Revisiting Evolutionary
-% Sequential Transfer Optimization: Part A", Submitted for Peer Review.
+% X. Xue, C. Yang, L. Feng, et al. ¡°How to Exploit Optimization Experience? Revisiting Evolutionary 
+% Sequential Transfer Optimization: Part A - Benchmark Problems", Submitted for Peer Review.
 
 function [target_opt,source_opt,lb_image,ub_image] = opt_config(xi,num_tasks,d,sim_distribution)
 source_opt = zeros(num_tasks,d);
