@@ -1,4 +1,4 @@
-# How to Exploit Experience? Revisiting Evolutionary Sequential Transfer Optimization: Part A
+# How to Exploit Optimization Experience? Revisiting Evolutionary Sequential Transfer Optimization: Part A - Benchmark Problems
 
 ## Benchmarking Sequential Transfer Optimization Problems
 
