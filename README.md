@@ -2,7 +2,7 @@
 
 ## Benchmarking Sequential Transfer Optimization Problems (STOPs)
 
-This repository provides the MATLAB implementations of producing the benchmark suite developed in the above article, which contains 12 individual STOPs. To instantiate an STOP, we need to configure the following six aspects: target task, transfer scenario, optimum coverage, similarity distribution, problem dimension, and the number of source tasks. Their available configurations are as follows:
+This repository provides the MATLAB implementations of producing the benchmark suite developed in the above paper, which contains 12 individual STOPs. To instantiate an STOP, we need to configure the following six aspects: target task, transfer scenario, optimum coverage, similarity distribution, problem dimension, and the number of source tasks. Their available configurations are as follows:
 
 * target task (F): `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`.
 * transfer scenario (T): `Ta` and `Te`.
