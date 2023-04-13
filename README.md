@@ -29,7 +29,7 @@ In this work, we name an STOP as F-T-xi-p-d-k, where F denotes the target family
 |STOP 11|Ackley-Ta-0.7-pc-50-k|
 |STOP 12|Ellipsoid-Te-1-pc-50-k|
 
-The above 12 STOPs can be easily instantiated using the class [STOP](https://github.com/XmingHsueh/Revisiting-S-ESTOs-PartA/blob/main/utils/STOP.m). The script of generating the 12 STOPs is [main_benchmarking_stop](https://github.com/XmingHsueh/Revisiting-S-ESTOs-PartA/blob/main/main_benchmarking_stop.m).
+The above 12 STOPs can be easily instantiated using the class [STOP](https://github.com/XmingHsueh/STOP/blob/main/utils/STOP.m). The script of generating the 12 STOPs is [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m).
 
 
 ## Citation
