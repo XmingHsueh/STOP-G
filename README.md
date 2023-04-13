@@ -1,4 +1,4 @@
-# How to Exploit Optimization Experience? Revisiting Evolutionary Sequential Transfer Optimization: Part A - Benchmark Problems
+# A Scalable Test Problem Toolkit for Sequential Transfer Optimization
 
 ## Benchmarking Sequential Transfer Optimization Problems (STOPs)
 
@@ -11,7 +11,7 @@ This repository provides the MATLAB implementations of producing the benchmark s
 * problem dimension (d): a positive integer.
 * the number of source tasks (k): a positive integer.
 
-For more detailed explainations about the above six aspects, interested readers can refer to part A of the series. In this work, we name an STOP as F-T-xi-p-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, p represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 STOPs to form the benchmark suite,
+In this work, we name an STOP as F-T-xi-p-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, p represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 STOPs to form the benchmark suite,
 
 
 |Problem ID|Problem Specification|
