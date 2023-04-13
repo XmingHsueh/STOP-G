@@ -37,12 +37,12 @@ The above 12 STOPs can be easily instantiated using the class [STOP](https://git
 If you find this repo useful for your research, please consider to cite:
 ```latex
 @article{Xue2022,
-title = {How to Exploit Optimization Experience? Revisiting Evolutionary Sequential Transfer Optimization: Part A - Benchmark Problems},
+title = {A Scalable Test Problem Toolkit for Sequential Transfer Optimization},
 author = {Xue, Xiaoming and Yang, Cuie and Feng, Liang and Zhang, Kai and Song, Linqi and Tan, Kay Chen}
 journal = {...},
 volume = {...},
 pages = {...},
-year = {2022},
+year = {2023},
 doi = {https://...},
 url = {http://...},
 }
