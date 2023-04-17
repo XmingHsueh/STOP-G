@@ -1,4 +1,4 @@
-# A Scalable Test Problem Toolkit for Sequential Transfer Optimization
+# A Scalable Test Problem Generator for Sequential Transfer Optimization
 
 ## Benchmarking Sequential Transfer Optimization Problems (STOPs)
 
