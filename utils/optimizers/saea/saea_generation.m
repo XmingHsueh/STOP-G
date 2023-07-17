@@ -1,9 +1,9 @@
-function population_child = ea_generator(population_parent,lb,ub)
+function population_child = saea_generation(population_parent,lb,ub)
 [popsize,dim] = size(population_parent);
 population = (population_parent-repmat(lb,popsize,1))./(repmat(ub,popsize,1)-repmat(lb,popsize,1));
-mu = 15;     % index of Simulated Binary Crossover (tunable)
-mum = 15;    % index of polynomial mutation
-probswap = 0.5; % probability of variable swap
+mu = 15;
+mum = 15;
+probswap = 0.5;
 indorder = randperm(popsize);
 population_child = zeros(popsize,dim);
 
