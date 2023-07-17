@@ -28,21 +28,17 @@ In this work, we name an STOP as F-T-h-d-k, where F denotes the target family, T
 |STOP 11|Ackley-Ta-l2-50-k|
 |STOP 12|Ellipsoid-Te-l1-50-k|
 
-In this repository, we employ two backbone optimizers, i.e., evolutionary algorithm (EA) and surrogate-assisted evolutionary algorithm (SAEA), to denmonstrate the generation process of the 12 STOPs, whose scripts can be found at [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m) and [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m), respectively.
+In this repository, we employ two backbone optimizers, i.e., evolutionary algorithm (EA) and surrogate-assisted evolutionary algorithm (SAEA), to denmonstrate the generation process of the 12 STOPs, whose scripts can be found at [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_generation_ea.m) and [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_generation_saea.m), respectively.
 
 ## Citation
 
 If you find this repo useful for your research, please consider to cite:
 ```latex
-@article{Xue2023,
-title = {A Scalable Test Problem Toolkit for Sequential Transfer Optimization},
-author = {Xue, Xiaoming and Yang, Cuie and Feng, Liang and Zhang, Kai and Song, Linqi and Tan, Kay Chen}
-journal = {...},
-volume = {...},
-pages = {...},
-year = {2023},
-doi = {https://...},
-url = {http://...},
+@article{xue2023scalable,
+  title={A Scalable Test Problem Generator for Sequential Transfer Optimization},
+  author={Xue, Xiaoming and Yang, Cuie and Feng, Liang and Zhang, Kai and Song, Linqi and Tan, Kay Chen},
+  journal={arXiv preprint arXiv:2304.08503},
+  year={2023}
 }
 ```
 
