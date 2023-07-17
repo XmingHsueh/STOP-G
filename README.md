@@ -2,35 +2,33 @@
 
 ## Benchmarking Sequential Transfer Optimization Problems (STOPs)
 
-This repository provides the MATLAB implementations of producing the benchmark suite developed in the above paper, which contains 12 individual STOPs. To instantiate an STOP, we need to configure the following six aspects: target task, transfer scenario, optimum coverage, similarity distribution, problem dimension, and the number of source tasks. Their available configurations are as follows:
+This repository provides the MATLAB implementation of producing the benchmark suite developed in the above paper, which contains 12 individual STOPs. To instantiate an STOP, we need to set up the following five parameters: the task family of the target task, the transfer scenario, the similarity distribution, the task dimension, and the number of source tasks. Their available realizations are as follows:
 
-* target task (F): `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`.
-* transfer scenario (T): `Ta` and `Te`.
-* the parameter that controls optimum coverage (xi): a real number from 0 to 1.
-* similarity distribution (p): `pc`, `pu`, `pi` and `pd`.
-* problem dimension (d): a positive integer.
-* the number of source tasks (k): a positive integer.
+* Task families (F): `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`.
+* Transfer scenarios (T): `Ta` and `Te`.
+* Similarity distributions (h): `h1`, `h2`, `m1`, `m2`, `m3`, `m4`, `l1`, `l2`.
+* Task dimensions (d): positive integers.
+* Numbers of source tasks (k): positive integers.
 
-In this work, we name an STOP as F-T-xi-p-d-k, where F denotes the target family, T represents the transfer scenario, xi is the optimum coverage-related parameter, p represents the similarity distribution, d denotes the problem dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 STOPs to form the benchmark suite,
+In this work, we name an STOP as F-T-h-d-k, where F denotes the target family, T represents the transfer scenario, h represents the similarity distribution, d denotes the task dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 STOPs to form the benchmark suite,
 
 
 |Problem ID|Problem Specification|
 |:-|:-|
-|STOP 1|Sphere-Ta-0-pc-50-k|
-|STOP 2|Ellipsoid-Te-0-pu-25-k|
-|STOP 3|Schwefel-Ta-0-pi-30-k|
-|STOP 4|Quartic-Te-0-pd-50-k|
-|STOP 5|Ackley-Ta-1-pi-25-k|
-|STOP 6|Rastrigin-Te-1-pu-50-k|
-|STOP 7|Griewank-Ta-0.7-pi-25-k|
-|STOP 8|Levy-Te-0.7-pd-30-k|
-|STOP 9|Sphere-Ta-1-pc-25-k|
-|STOP 10|Rastrigin-Te-0.7-pc-30-k|
-|STOP 11|Ackley-Ta-0.7-pc-50-k|
-|STOP 12|Ellipsoid-Te-1-pc-50-k|
+|STOP 1|Sphere-Ta-h1-50-k|
+|STOP 2|Ellipsoid-Te-h2-25-k|
+|STOP 3|Schwefel-Ta-h2-30-k|
+|STOP 4|Quartic-Te-h1-50-k|
+|STOP 5|Ackley-Ta-m1-25-k|
+|STOP 6|Rastrigin-Te-m2-50-k|
+|STOP 7|Griewank-Ta-m3-25-k|
+|STOP 8|Levy-Te-pd-m4-k|
+|STOP 9|Sphere-Ta-l1-25-k|
+|STOP 10|Rastrigin-Te-l2-30-k|
+|STOP 11|Ackley-Ta-l2-50-k|
+|STOP 12|Ellipsoid-Te-l1-50-k|
 
-The above 12 STOPs can be easily instantiated using the class [STOP](https://github.com/XmingHsueh/STOP/blob/main/utils/STOP.m). The script of generating the 12 STOPs is [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m).
-
+In this repository, we employ two backbone optimizers, i.e., evolutionary algorithm (EA) and surrogate-assisted evolutionary algorithm (SAEA), to denmonstrate the generation process of the 12 STOPs, whose scripts can be found at [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m) and [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m), respectively.
 
 ## Citation
 
