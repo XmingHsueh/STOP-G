@@ -28,7 +28,7 @@ In this work, we name an STOP as F-T-h-d-k, where F denotes the target family, T
 |STOP 11|Ackley-Ta-l2-50-k|
 |STOP 12|Ellipsoid-Te-l1-50-k|
 
-In this repository, we employ two backbone optimizers, i.e., evolutionary algorithm (EA) and surrogate-assisted evolutionary algorithm (SAEA), to denmonstrate the generation process of the 12 STOPs, whose scripts can be found at [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_generation_ea.m) and [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_generation_saea.m), respectively.
+In this repository, we employ two backbone optimizers, i.e., evolutionary algorithm (EA) and surrogate-assisted evolutionary algorithm (SAEA), to denmonstrate the generation process of the 12 STOPs, whose scripts can be found at [STOP-EA](https://github.com/XmingHsueh/STOP/blob/main/main_generation_ea.m) and [STOP-SAEA](https://github.com/XmingHsueh/STOP/blob/main/main_generation_saea.m), respectively.
 
 ## Citation
 
