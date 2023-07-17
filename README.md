@@ -22,7 +22,7 @@ In this work, we name an STOP as F-T-h-d-k, where F denotes the target family, T
 |STOP 5|Ackley-Ta-m1-25-k|
 |STOP 6|Rastrigin-Te-m2-50-k|
 |STOP 7|Griewank-Ta-m3-25-k|
-|STOP 8|Levy-Te-pd-m4-k|
+|STOP 8|Levy-Te-m4-30-k|
 |STOP 9|Sphere-Ta-l1-25-k|
 |STOP 10|Rastrigin-Te-l2-30-k|
 |STOP 11|Ackley-Ta-l2-50-k|
