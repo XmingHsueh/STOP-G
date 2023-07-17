@@ -2,7 +2,7 @@
 
 ## A Benchmark Suite of Sequential Transfer Optimization Problems (STOPs)
 
-This repository provides the MATLAB implementation of producing the benchmark suite developed in the above paper, which contains 12 individual STOPs. To instantiate an STOP, we need to set up the following five parameters: the task family of the target task, the transfer scenario, the similarity distribution, the task dimension, and the number of source tasks. Their available realizations are as follows:
+This repository provides the MATLAB implementation of generating a benchmark suite of sequential transfer optimization problems (STOPs). To instantiate an STOP, we need to set up the following five parameters: the target family, the transfer scenario, the similarity distribution, the task dimension, and the number of source tasks. Their available realizations are as follows:
 
 * Task families (F): `Sphere`, `Ellipsoid`, `Schwefel`, `Quartic`, `Ackley`, `Rastrigin`, `Griewank`, and `Levy`.
 * Transfer scenarios (T): `Ta` and `Te`.
@@ -28,21 +28,17 @@ In this work, we name an STOP as F-T-h-d-k, where F denotes the target family, T
 |STOP 11|Ackley-Ta-l2-50-k|
 |STOP 12|Ellipsoid-Te-l1-50-k|
 
-In this repository, we employ two backbone optimizers, i.e., evolutionary algorithm (EA) and surrogate-assisted evolutionary algorithm (SAEA), to denmonstrate the generation process of the 12 STOPs, whose scripts can be found at [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m) and [main_benchmarking_stop](https://github.com/XmingHsueh/STOP/blob/main/main_benchmarking_stop.m), respectively.
+In this repository, we employ two backbone optimizers, i.e., evolutionary algorithm (EA) and surrogate-assisted evolutionary algorithm (SAEA), to denmonstrate the generation process of the 12 STOPs, whose scripts can be found at [STOP-EA](https://github.com/XmingHsueh/STOP/blob/main/main_generation_ea.m) and [STOP-SAEA](https://github.com/XmingHsueh/STOP/blob/main/main_generation_saea.m), respectively.
 
 ## Citation
 
 If you find this repo useful for your research, please consider to cite:
 ```latex
-@article{Xue2023,
-title = {A Scalable Test Problem Toolkit for Sequential Transfer Optimization},
-author = {Xue, Xiaoming and Yang, Cuie and Feng, Liang and Zhang, Kai and Song, Linqi and Tan, Kay Chen}
-journal = {...},
-volume = {...},
-pages = {...},
-year = {2023},
-doi = {https://...},
-url = {http://...},
+@article{xue2023scalable,
+  title={A Scalable Test Problem Generator for Sequential Transfer Optimization},
+  author={Xue, Xiaoming and Yang, Cuie and Feng, Liang and Zhang, Kai and Song, Linqi and Tan, Kay Chen},
+  journal={arXiv preprint arXiv:2304.08503},
+  year={2023}
 }
 ```
 
