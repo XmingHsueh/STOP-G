@@ -1,6 +1,6 @@
 # A Scalable Test Problem Generator for Sequential Transfer Optimization
 
-## Benchmarking Sequential Transfer Optimization Problems (STOPs)
+## A Benchmark Suite of Sequential Transfer Optimization Problems (STOPs)
 
 This repository provides the MATLAB implementation of producing the benchmark suite developed in the above paper, which contains 12 individual STOPs. To instantiate an STOP, we need to set up the following five parameters: the task family of the target task, the transfer scenario, the similarity distribution, the task dimension, and the number of source tasks. Their available realizations are as follows:
 
