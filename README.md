@@ -11,7 +11,7 @@ This repository provides the MATLAB implementation of generating a benchmark sui
 * Numbers of source tasks (k): positive integers.
 
 The eight similarity distributions are illustrated as follows:
-![NONE](https://github.com/XmingHsueh/STOP/blob/main/utils/others/similarity_distributions.png)
+![NONE](https://github.com/XmingHsueh/STOP-G/blob/main/utils/others/similarity_distributions.png)
 
 In this work, we name an STOP as F-T-h-d-k, where F denotes the target family, T represents the transfer scenario, h represents the similarity distribution, d denotes the task dimension, k is the number of source tasks. According to this naming rule, we specify the following 12 STOPs to form the benchmark suite,
 
