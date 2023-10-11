@@ -35,7 +35,7 @@ In this repository, we employ two backbone optimizers, i.e., evolutionary algori
 
 ## Citation
 
-If you find this repo useful for your research, please consider to cite:
+If you found this code useful, please consider citing the paper below.
 ```latex
 @article{xue2023scalable,
   title={A Scalable Test Problem Generator for Sequential Transfer Optimization},
